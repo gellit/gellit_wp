@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#a0e7f2,#fff);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 75px;
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    z-index: 10000;
+}
+@media screen and (max-width:1000px){
+    header{
+        justify-content:center;
+    }
+}
+header img{
+    width: 100px;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    border: 1px none #fff;    
+}
+header ul li .contact{
+    text-decoration: none;
+    background: orange;
+    color: black;
+    border-style: none;
+
+}
+header ul li a:hover{
+    background: #fff;
+    color: #2b1055;
+    text-decoration: none;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#gellitbead{
+    z-index: 998;
+    width: 200px;
+    height: auto;
+    object-fit:fill;
+    left: auto;
+    top: 100px;
+    opacity: 0;
+
+}
+section img#logo{
+    z-index: 998;
+    width: 300px;
+    height: auto;
+    object-fit:fill;
+    left: auto;
+    top: 100px;
+
+}
+section img#foreground{
+    z-index: 999;
+}
+section img#middleground{
+    z-index: 10;
+}
+
+.sec{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background: #9d693c;
+    color: #fff;
+    overflow: hidden;
+}
+.sec img#aboutbead{
+    
+    z-index: 998;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    object-fit:fill;
+    pointer-events: none;
+    opacity: 0;
+}
+.sec table{
+    width:100%;
+    table-layout: fixed;
+}
+.sec .about .abouttext table td#abouttext{
+    text-align:left;
+}
+.sec img#whatisgellitimg{
+    position: relative;
+    width: 100%;
+}
+.sec .about .abouttext .centertable td{
+    text-align: center;
+
+}
+.sec .about{
+    position: relative;
+    background-image: url("imgs/wp_groundbackground.png");
+    background-color: #9d693c;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+
+}
+.sec .about .abouttext h2#gellitwork{
+    padding-top: 50px;
+}
+.sec .about .abouttext a{
+    color: #fff;
+    text-decoration: underline;
+}
+.sec .about img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+
+}
+.sec .about .abouttext{
+    position: relative;
+    z-index: 5;
+}
+.sec h2{
+    font-size: 3.5em;
+    color:#fff;
+    margin-bottom: 10px;
+}
+.sec p{
+    color:#fff;
+    font-size: 1.2em;
+}
+table{
+    text-align: center;
+}
+table td{
+    vertical-align: top;
+}
+@media(max-width:1200px){
+    td{
+        display: block;
+        width: 100%;
+    }
+}
+.sec .team{
+    position: relative;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    background: #3C8D9E;
+    z-index: 5;
+}
+.sec .team table{
+    padding-top:30px;
+    width:100%;
+    text-align: center;
+    table-layout: fixed;
+}
+.sec .team table td{
+    padding: 15px;
+}
+.sec .team table img{
+    width: 300px;
+}
+
+.sec .contact{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #0F4652;
+    z-index: 5;
+    text-align: center;
+}
+
+
+.sec .contact .form input{
+    width: 600px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    border: none;
+    font-size: 1em;
+}
+.sec .contact .form textarea {
+    resize: none;
+    border-radius: 25px;
+    height: 300px;
+    width: 600px;
+    padding: 20px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+@media(max-width:700px){
+    .sec .contact .form input{
+        width: 90%;
+    }
+}
+@media(max-width:700px){
+    .sec .contact .form textarea{
+        width: 90%;
+    }
+}
+.sec .contact .form input[type=text]:focus {
+    background-color: lightblue;
+}
+.sec .contact .form input[type=email]:focus {
+    background-color: lightblue;
+}
+.sec .contact .form textarea:focus {
+    background-color: lightblue;
+}
+.sec .contact .form button{
+    margin-top:10px;
+    background-color: orange;
+    width:150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.3em;
+}
+
+.sec .copyright{
+    background: #0F4652;
+    color: #fff;
+    font-size: 0.8em;
+    text-align: right;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
