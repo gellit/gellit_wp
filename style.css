@@ -28,15 +28,6 @@ header{
         justify-content:center;
     }
 }
-
-header .logo{
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 header ul{
     display: flex;
     justify-content: center;
@@ -121,11 +112,9 @@ section img#logo{
 @media screen and (max-width:991px){
     section img#logo{
         width: 500px;
-        top: auto;
     }
     section img#gellitbead{
         width:333px;
-        top: auto;
     }
 }
 section img#foreground{
@@ -145,16 +134,7 @@ section img#middleground{
     color: #fff;
     overflow: hidden;
 }
-.sec img#aboutbead{
-    
-    z-index: 998;
-    position: absolute;
-    width: 200px;
-    height: auto;
-    object-fit:fill;
-    pointer-events: none;
-    opacity: 0;
-}
+
 .sec table{
     width:100%;
     table-layout: fixed;
@@ -249,8 +229,6 @@ table td{
     z-index: 5;
     text-align: center;
 }
-
-
 .sec .contact .form input{
     width: 600px;
     /*height: 50px;*/

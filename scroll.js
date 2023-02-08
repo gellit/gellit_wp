@@ -9,13 +9,13 @@ window.addEventListener("scroll", function(){
     let value = window.scrollY;
     clouds.style.left = value * 0.25 + "px";
     clouds.style.top = value * 0.25 + "px";
+    gellitbead.style.top = 100 + value * 1.2 + "px";
     
     if(this.window.innerWidth < 991){
         gellitbead.style.width = 333 - 66 / 600 * value + "px";
-        gellitbead.style.top = window.innerWidth/2 - gellitbead.offsetHeight/2 + value * 1.2 + "px";
     }else{
         gellitbead.style.width = 200 - 66 / 600 * value + "px";
-        gellitbead.style.top = 100 + value * 1.2 + "px";
+        
     }
     
     if(value < 100){
