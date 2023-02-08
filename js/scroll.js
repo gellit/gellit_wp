@@ -10,7 +10,14 @@ window.addEventListener("scroll", function(){
     clouds.style.left = value * 0.25 + "px";
     clouds.style.top = value * 0.25 + "px";
     gellitbead.style.top = 100 + value * 1.2 + "px";
-    gellitbead.style.width = 200 - 66 / 600 * value + "px";
+    
+    if(this.window.innerWidth < 991){
+        gellitbead.style.width = 333 - 66 / 600 * value + "px";
+    }else{
+        gellitbead.style.width = 200 - 66 / 600 * value + "px";
+        
+    }
+    
     if(value < 100){
         gellitbead.style.opacity = 0 + 0.8 / 100 * value;
     }else{
