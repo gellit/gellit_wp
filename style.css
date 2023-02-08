@@ -10,7 +10,7 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#a0e7f2,#fff);
+    background: linear-gradient(#9d693c, #0F4652);
 }
 header{
     position: absolute;
@@ -23,14 +23,12 @@ header{
     white-space: nowrap;
     z-index: 10000;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:991px){
     header{
         justify-content:center;
     }
 }
-header img{
-    width: 100px;
-}
+
 header .logo{
     color: #fff;
     font-weight: 700;
@@ -66,18 +64,28 @@ header ul li .contact{
 }
 header ul li a:hover{
     background: #fff;
-    color: #2b1055;
+    color: #000;
     text-decoration: none;
 }
 section{
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background: linear-gradient(#a0e7f2,#fff);
+}
+section::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient( to top, #9d693c,transparent);
+    z-index: 10000;
 }
 section img{
     position: absolute;
@@ -87,6 +95,9 @@ section img{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+}
+section img#clouds{
+    object-fit:contain;
 }
 section img#gellitbead{
     z-index: 998;
@@ -106,6 +117,16 @@ section img#logo{
     left: auto;
     top: 100px;
 
+}
+@media screen and (max-width:991px){
+    section img#logo{
+        width: 500px;
+        top: auto;
+    }
+    section img#gellitbead{
+        width:333px;
+        top: auto;
+    }
 }
 section img#foreground{
     z-index: 999;
@@ -232,13 +253,13 @@ table td{
 
 .sec .contact .form input{
     width: 600px;
-    height: 50px;
+    /*height: 50px;*/
     border-radius: 50px;
     padding: 20px;
     margin-bottom: 10px;
     vertical-align: top;
     border: none;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 .sec .contact .form textarea {
     resize: none;
@@ -248,16 +269,17 @@ table td{
     padding: 20px;
     border: none;
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
-@media(max-width:700px){
+@media(max-width:991px){
     .sec .contact .form input{
         width: 90%;
     }
 }
-@media(max-width:700px){
+@media(max-width:991px){
     .sec .contact .form textarea{
         width: 90%;
+        height: 500px;
     }
 }
 .sec .contact .form input[type=text]:focus {
@@ -272,11 +294,13 @@ table td{
 .sec .contact .form button{
     margin-top:10px;
     background-color: orange;
-    width:150px;
-    height: 50px;
+    /*width:150px;
+    height: 50px;*/
+    padding: 10px 50px;
     border-radius: 50px;
     border: none;
     font-size: 1.3em;
+
 }
 
 .sec .copyright{
