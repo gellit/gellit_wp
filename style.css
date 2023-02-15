@@ -9,6 +9,7 @@
 }
 body{
     min-height: 100vh;
+    width: 100%;
     overflow-x: hidden;
     background: linear-gradient(#9d693c, #0F4652);
 }
@@ -109,14 +110,14 @@ section img#logo{
     top: 100px;
 
 }
-@media screen and (max-width:991px){
+/*@media screen and (max-width:991px){
     section img#logo{
         width: 500px;
     }
     section img#gellitbead{
         width:333px;
     }
-}
+}*/
 section img#foreground{
     z-index: 999;
 }
