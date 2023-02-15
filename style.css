@@ -47,6 +47,11 @@ header ul li a{
     border-radius: 20px;
     border: 1px none #fff;    
 }
+@media screen and (max-width:991px) {
+    header ul li a{
+        font-size: 0.8em;
+    }
+}
 header ul li .contact{
     text-decoration: none;
     background: orange;
