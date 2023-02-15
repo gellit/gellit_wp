@@ -115,14 +115,6 @@ section img#logo{
     top: 100px;
 
 }
-/*@media screen and (max-width:991px){
-    section img#logo{
-        width: 500px;
-    }
-    section img#gellitbead{
-        width:333px;
-    }
-}*/
 section img#foreground{
     z-index: 999;
 }
@@ -165,6 +157,7 @@ section img#middleground{
     padding-bottom: 25px;
 
 }
+
 .sec .about .abouttext h2#gellitwork{
     padding-top: 50px;
 }
@@ -234,6 +227,20 @@ table td{
     background: #0F4652;
     z-index: 5;
     text-align: center;
+}
+@media screen and (max-width:991px) {
+    .sec .about{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .sec .team{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .sec .contact{
+        padding-left:10px;
+        padding-right:10px;
+    }
 }
 .sec .contact .form input{
     width: 600px;
