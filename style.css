@@ -220,7 +220,12 @@ table td{
     padding: 15px;
 }
 .sec .team table img{
-    width: 300px;
+    width: 280px;
+}
+@media screen and (max-width:481px) {
+    .sec .team table img{
+        width: 60%;
+    }
 }
 
 .sec .contact{
@@ -303,4 +308,21 @@ table td{
     text-align: right;
     padding-right: 50px;
     padding-bottom: 10px;
+}
+@media screen and (max-width:991px) {
+    .sec h2{
+        font-size: 2em;
+    }
+    .sec p{
+        font-size: 1em;
+    }
+    .sec .contact .form input{
+        font-size: 1em;
+    }
+    .sec .contact .form textarea{
+        font-size: 1em;
+    }
+    .sec .contact .form button{
+        font-size: 1em;
+    }
 }
