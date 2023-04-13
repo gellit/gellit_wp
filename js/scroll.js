@@ -16,10 +16,11 @@ window.addEventListener("scroll", function(){
     gellitbead.style.top = 100 + value * 1.2 + "px";
     
     gellitbead.style.opacity = 0 + 0.2 / 60 * value;
-    vp2.style.opacity = 0 + 0.2 / 10 * (value -51);
     if(gellitbead.style.opacity >= 0.85){
         gellitbead.style.opacity = 0.85;
     }
+    vp2.style.opacity = 0 + 0.2 / 10 * (value -51);
+    
 
     if(screenWidth <= 991){
         if(value < 50){
@@ -53,7 +54,7 @@ window.addEventListener("scroll", function(){
         clipRadius = 25;
         clipCoEff = 1.18;
         vpHeight = 81;
-        initClipPath = -3;
+        initClipPath = -5;
         initScrollClip = 25;
         scrollRangeClip = 166;
     }else{
