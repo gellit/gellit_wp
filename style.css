@@ -128,7 +128,7 @@ section img#logo{
 }
 section .valueprop{
     width: 500px;
-    height: 500px;
+    height: 300px;
     left: auto;
     position: absolute;
     top: 350px;
@@ -157,9 +157,22 @@ section .valueprop img#vp2{
     section img#gellitbead{
         width: 120px;
     }
-    section .valueprop img#vp{
+    section .valueprop{
         width: 300px;
-        /*top: 200px;*/
+        height: 200px;
+        top: 250px;
+    }
+    section .valueprop img{
+        width: 300px;
+    }
+    section .valueprop img#vp1{
+        opacity: 1;
+    }
+    section .valueprop img#vp2{
+        clip-path: circle(22.5px at 50% -60px);
+        filter: blur(1px);
+        transform: scale(2);
+        
     }
     img#uparrow{
         width: 30px;
