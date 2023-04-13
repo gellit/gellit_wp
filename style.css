@@ -66,6 +66,7 @@ header ul li a:hover{
     color: #000;
     text-decoration: none;
 }
+
 section{
     position: relative;
     width: 100%;
@@ -84,7 +85,7 @@ section::before{
     width: 100%;
     height: 50px;
     background: linear-gradient( to top, #9d693c,transparent);
-    z-index: 10000;
+    z-index: 1001;
 }
 section img{
     position: absolute;
@@ -115,7 +116,37 @@ section img#logo{
     object-fit:fill;
     left: auto;
     top: 100px;
+}
+section img#vp{
+    z-index: 998;
+    width: 500px;
+    height: auto;
+    object-fit: fill;
+    left: auto;
+    top: 300px;
+}
+@media screen and (max-width:991px) {
+    section img#logo{
+        width: 180px;
+    }
+    section img#gellitbead{
+        width: 120px;
+    }
+    section img#vp{
+        width: 300px;
+        top: 200px;
+    }
+}
 
+img#uparrow{
+    z-index: 1002;
+    width: 60px;
+    height: auto;
+    object-fit:fill;
+    left: 10px;
+    top: 10px;
+    position: fixed;
+    opacity: 0;
 }
 section img#foreground{
     z-index: 999;
@@ -134,7 +165,6 @@ section img#middleground{
     color: #fff;
     overflow: hidden;
 }
-
 .sec table{
     width:100%;
     table-layout: fixed;
@@ -142,9 +172,13 @@ section img#middleground{
 .sec .about .abouttext table td#abouttext{
     text-align:left;
 }
+.sec img{
+    pointer-events: none;
+}
 .sec img#whatisgellitimg{
     position: relative;
     width: 100%;
+    
 }
 .sec .about .abouttext .centertable td{
     text-align: center;
@@ -173,8 +207,6 @@ section img#middleground{
     left: 0;
     width: 100%;
     z-index: 1;
-    pointer-events: none;
-
 }
 .sec .about .abouttext{
     position: relative;
@@ -221,6 +253,7 @@ table td{
 }
 .sec .team table img{
     width: 280px;
+    pointer-events: none;
 }
 @media screen and (max-width:481px) {
     .sec .team table img{
