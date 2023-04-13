@@ -4,6 +4,7 @@ let background = document.getElementById("background");
 let middleground = document.getElementById("middleground");
 let header = document.querySelector("header")
 let foreground = document.getElementById("foreground");
+let uparrow = document.getElementById("uparrow");
 
 window.addEventListener("scroll", function(){
     let value = window.scrollY;
@@ -13,8 +14,13 @@ window.addEventListener("scroll", function(){
     
     if(value < 100){
         gellitbead.style.opacity = 0 + 0.8 / 100 * value;
+        uparrow.style.opacity = 0;
     }else{
         gellitbead.style.opacity = 1 - 0.2 / 500 * value;
+        uparrow.style.opacity = (value - 600)/1000;
+        if(uparrow.style.opacity>=0.8){
+            uparrow.style.opacity = 0.8;
+        }
     }
     
     logo.style.opacity = 1 - 1 / 400 * value;
