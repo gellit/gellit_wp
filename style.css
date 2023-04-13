@@ -66,7 +66,16 @@ header ul li a:hover{
     color: #000;
     text-decoration: none;
 }
-
+img#uparrow{
+    z-index: 1002;
+    width: 60px;
+    height: auto;
+    object-fit:fill;
+    left: 10px;
+    top: 10px;
+    position: fixed;
+    opacity: 0;
+}
 section{
     position: relative;
     width: 100%;
@@ -117,13 +126,29 @@ section img#logo{
     left: auto;
     top: 100px;
 }
-section img#vp{
-    z-index: 998;
+section .valueprop{
+    width: 500px;
+    height: 500px;
+    left: auto;
+    position: absolute;
+    top: 350px;
+}
+section .valueprop img{
+    z-index: 997;
     width: 500px;
     height: auto;
     object-fit: fill;
     left: auto;
-    top: 300px;
+    
+}
+section .valueprop img#vp1{
+    opacity: 1;
+}
+section .valueprop img#vp2{
+    clip-path: circle(45px at 50% -60px);
+    filter: blur(1px);
+    transform: scale(2);
+    
 }
 @media screen and (max-width:991px) {
     section img#logo{
@@ -132,22 +157,16 @@ section img#vp{
     section img#gellitbead{
         width: 120px;
     }
-    section img#vp{
+    section .valueprop img#vp{
         width: 300px;
-        top: 200px;
+        /*top: 200px;*/
+    }
+    img#uparrow{
+        width: 30px;
     }
 }
 
-img#uparrow{
-    z-index: 1002;
-    width: 60px;
-    height: auto;
-    object-fit:fill;
-    left: 10px;
-    top: 10px;
-    position: fixed;
-    opacity: 0;
-}
+
 section img#foreground{
     z-index: 999;
 }
