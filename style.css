@@ -219,8 +219,8 @@ section img#middleground{
 }
 
 @media screen and (max-width:1400px) {
-    .sec #imgofferimg{
-        width: 80%;
+    .sec img#offerimg{
+        width: 100%;
     }
 }
 
