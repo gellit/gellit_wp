@@ -218,6 +218,12 @@ section img#middleground{
     width: 60%;
 }
 
+@media screen and (max-width:1400px) {
+    .sec #imgofferimg{
+        width: 100%;
+    }
+}
+
 .sec .about .abouttext .centertable td{
     text-align: center;
 
