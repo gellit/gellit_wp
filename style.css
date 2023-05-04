@@ -215,12 +215,12 @@ section img#middleground{
 
 .sec img#offerimg{
     position: relative;
-    width: 60%;
+    width: 80%;
 }
 
 @media screen and (max-width:1400px) {
     .sec img#offerimg{
-        width: 80%;
+        width: 100%;
     }
 }
 
