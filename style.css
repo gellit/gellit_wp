@@ -183,6 +183,7 @@ section .valueprop img#vp2{
 section img#foreground{
     z-index: 999;
 }
+
 section img#middleground{
     z-index: 10;
 }
@@ -210,8 +211,19 @@ section img#middleground{
 .sec img#whatisgellitimg{
     position: relative;
     width: 100%;
-    
 }
+
+.sec img#offerimg{
+    position: relative;
+    width: 80%;
+}
+
+@media screen and (max-width:1400px) {
+    .sec img#offerimg{
+        width: 100%;
+    }
+}
+
 .sec .about .abouttext .centertable td{
     text-align: center;
 
@@ -390,4 +402,21 @@ table td{
     .sec .contact .form button{
         font-size: 1em;
     }
+}
+
+#sec a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    border: 1px none #fff;
+    margin-top: 10px;
+}
+
+.button1{
+    text-decoration: none;
+    background: orange;
+    color: black;
+    border-style: none;
+
 }
