@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Műegyetemi siker a Danube Cup versenyen",
+        "summary": "(in hungarian) Danube cup victory.",
+        "img": "imgs/gellit_danubecup_trophy.png",
+        "date": "16.06.2023",
+        "articlelink": "https://www.bme.hu/hirek/20230516/Muegyetemi_siker_a_Danube_Cup_versenyen"
+    },
+    {
+        "title": "Danube Cup: Das „Entrepreneurship“ in Passau und Regensburg",
+        "summary": "(in german) Gellit has won 1st place in the international pitch competition.",
+        "img": "imgs/gellit_danubecup_regensburg.png",
+        "date": "23.05.2023",
+        "articlelink": "https://www.uni-passau.de/wissenstransfer/aktuelles/meldung/danube-cup-das-entrepreneur-ship-in-passau-und-regensburg"
+    },
+    {
+        "title": "A BME csapata nyert egy nemzetközi versenyen Regensburgban",
+        "summary": "(in hungarian) Gellit achieved first place in the Danube Cup finals.",
+        "img": "imgs/gellit_danubecup_budapest.png",
+        "date": "20.05.2023",
+        "articlelink": "https://eduline.hu/felsooktatas/20230517_A_BME_csapata_nyert_egy_nemzetkozi_versenyen_Regensburgban"
+    },
+    {
+        "title": "Tücsökszelet és házhoz menő állatorvos – Újbudai startup verseny",
+        "summary": "(in hungarian) Gellit has won the main prize at the Újbuda startup competition.",
+        "img": "imgs/gellit_ujbuda.png",
+        "date": "12.04.2023",
+        "articlelink": "https://ujbudaonline.hu/2023/04/12/tucsokszelet-es-hazhoz-meno-allatorvos-ujbudai-startup-verseny/"
+    }
+]

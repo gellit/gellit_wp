@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1RQ3G7LZR"></script>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="gellit, fertilizer, gel, soil, conditioner, green, natural, eco, friendly">
+        <meta name="description" content="Gellit is an innovative fertiliser gel. It is a green and sustainable technology to improve crop yields while also providing protection from droughts.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="thumbnail" content="imgs/wp_thumbnail.png" />
+        <title>Gellit News</title>
+        <link rel="stylesheet" type="text/css" href="blogstyle.css">
+        <link rel="icon" href="imgs/wp_favicon.ico">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="index.html"><img src="imgs/logo_white.png" class="logo"></a>
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">News</a></li>
+                <li><a href="index.html#Contact" class="contact">Get in touch</a></li>
+            </ul>
+        </header>
+
+        <div id="container">
+            <div id="pagetitle">
+                <h1>They wrote this about us</h1>
+            </div>
+            <div id="cardsection">
+            </div>
+            <div id="copyright" class="copyright">
+                <p>© 2023 Gellit</p>
+            </div>
+        </div>
+        
+
+        <script>
+            // Load the card structure from card.html
+            $.get("card.html", function(data) {
+                var cardTemplate = data;
+    
+                fetch('assets/blogcardsdata.json')
+                .then(response => response.json())
+                .then(jsonData => {
+                    const container = document.getElementById('cardsection');
+    
+                    jsonData.forEach(item => {
+                        // Create a new card
+                        let newCard = $(cardTemplate);
+                        newCard.find('.cardimg img').attr('src', item.img);
+                        newCard.find('.titleandsummary h1').text(item.title);
+                        newCard.find('.titleandsummary p').text(item.summary);
+                        newCard.find(".carddate").text(item.date);
+                        newCard.find('.cardbottomtext a').attr('href', item.articlelink);
+                        newCard.find('.imglink').attr('href', item.articlelink);
+                        newCard.find('.textlink').attr('href', item.articlelink);
+    
+                        // Add the card to the container
+                        container.append(newCard.get(0));
+                    });
+                });
+            });
+        </script>
+
+    </body>
+</html>

@@ -48,6 +48,7 @@ header ul li a{
     color: #000;
     border-radius: 20px;
     border: 1px none #fff;    
+    transition: 100ms ease-in-out;
 }
 @media screen and (max-width:991px) {
     header ul li a{
@@ -59,7 +60,7 @@ header ul li .contact{
     background: orange;
     color: black;
     border-style: none;
-
+    transition: 100ms ease-in-out;
 }
 header ul li a:hover{
     background: #fff;
@@ -305,6 +306,17 @@ table td{
     }
 }
 
+.sec .team .recruit h3{
+    font-size: 2.5em;
+}
+.sec .team .recruit p{
+    font-size: 1.5em;
+    font-style: normal;
+}
+.emil{
+    color:orange;
+}
+
 .sec .contact{
     padding-top: 25px;
     padding-bottom: 25px;
@@ -375,7 +387,11 @@ table td{
     border-radius: 50px;
     border: none;
     font-size: 1.3em;
-
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+.sec .contact .form button:hover{
+    background: #fff;
 }
 
 .sec .copyright{
@@ -418,5 +434,8 @@ table td{
     background: orange;
     color: black;
     border-style: none;
-
+    transition: 100ms ease-in-out;
+}
+.button1:hover{
+    background: #fff;
 }
