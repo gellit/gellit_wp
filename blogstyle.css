@@ -116,8 +116,21 @@ header ul li a:hover{
     .cardtext h1{
         font-size: 2vh;
     }
-
-
+    header ul li{
+        margin-left: 5px;
+        font-size: 1em;
+    }
+    header ul li a{
+        font-size: 1em;
+    }
+    header{
+        justify-content:center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .logo{
+        display: none;
+    }
 }
 #card{
     /*background: rgba(181,181,181,0.39);*/

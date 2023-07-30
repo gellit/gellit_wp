@@ -54,6 +54,9 @@ header ul li a{
     header ul li a{
         font-size: 0.8em;
     }
+    header ul li{
+        margin-left: 5px;
+    }
 }
 header ul li .contact{
     text-decoration: none;
