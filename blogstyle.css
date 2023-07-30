@@ -97,6 +97,7 @@ header ul li a:hover{
     margin-bottom: 10px;
 }
 @media screen and (max-width:1000px) {
+    
     h1{
         font-size: 4vh;
     }
@@ -131,9 +132,10 @@ header ul li a:hover{
     .logo{
         display: none;
     }
-    #card{
-        height: 30vh;
+    body #card .cardtext .readmore{
+        width: 18vh;
     }
+    
 }
 #card{
     /*background: rgba(181,181,181,0.39);*/
@@ -141,7 +143,7 @@ header ul li a:hover{
     color: #fff;
     display: flex;
     width:100%;
-    height: 25vh;
+    height: 30vh;
     border-radius: 12px 0px 10px 0px;
     margin-top: 2vh;
     /*border: 1px white solid;
