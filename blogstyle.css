@@ -131,6 +131,9 @@ header ul li a:hover{
     .logo{
         display: none;
     }
+    #card{
+        height: 30vh;
+    }
 }
 #card{
     /*background: rgba(181,181,181,0.39);*/
