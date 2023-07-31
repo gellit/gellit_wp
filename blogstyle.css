@@ -71,6 +71,16 @@ header ul li a:hover{
     color: #000;
     text-decoration: none;
 }
+header ul li .improtantmenu{
+    text-decoration: none;
+    background: red;
+    color: black;
+    border-style: none;
+    transition: 100ms ease-in-out;
+}
+header ul li .improtantmenu:hover{
+    background:white;
+}
 
 #container{
     display: block;
@@ -97,7 +107,7 @@ header ul li a:hover{
     bottom: 100px;
     margin-bottom: 10px;
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:991px) {
     
     h1{
         font-size: 4vh;
@@ -131,6 +141,15 @@ header ul li a:hover{
         padding-left: 10px;
         padding-right: 10px;
     }
+    body header ul li .active{
+        display: none;
+    }
+    body header ul li .contact{
+        display: none;
+    }
+    header ul li .improtantmenu{
+        background: orange;
+    }
     .logo{
         display: none;
     }
@@ -142,6 +161,7 @@ header ul li a:hover{
         padding-right: 3%;
         padding-bottom: 3vh;
     }
+    
     
 }
 #card{
