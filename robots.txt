@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /imgs/
+Allow: /imgs/logo_green_white_bg.png
