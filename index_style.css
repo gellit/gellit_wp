@@ -316,6 +316,9 @@ header ul li .highlighted:hover{
         flex-direction: column;
         justify-content: space-between;
     }
+    #About #losth3{
+        padding-left: 10%;
+    }
 }
 @media screen and (max-width:1350px){
     #Banner img#big_vp{
