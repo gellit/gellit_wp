@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #3b8d9e;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 75px;
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    z-index: 10000;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    border: 1px none #fff;    
+    transition: 100ms ease-in-out;
+}
+header ul li a:hover{
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+}
+header ul li .contact{
+    text-decoration: none;
+    background: orange;
+    color: black;
+    border-style: none;
+    transition: 100ms ease-in-out;
+}
+header ul li .highlighted{
+    text-decoration: none;
+    background:tomato;
+    color: black;
+    border-style: none;
+    transition: 100ms ease-in-out;
+}
+header ul li .highlighted:hover{
+    background:white;
+}
+
+#Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    overflow: hidden;
+    background: linear-gradient(#a0e7f2,#fff);
+}
+#Banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#Banner img#big_vp{
+    object-fit: cover;
+}
+#Banner img#small_vp{
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+    left: auto;
+    opacity: 0;
+    top: 100px;
+}
+#Gradient{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(#9d693c,#3b8d9e);
+}
+#Supporters{
+    pointer-events: none;
+    width: 100%;
+    background-color: #3b8d9e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#Supporters .supporter_logo{
+    width: 250px;
+}
+#Supporters .mini_logo{
+    width: 75px;
+}
+#Supporters img{
+    width: 100%;
+}
+#About{
+    width: 100%;
+    background-color: #3b8d9e;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+
+}
+#About h2{
+    font-size: 3.5em;
+}
+#About h3{
+    font-size: 2.5em;
+}
+#About p{
+    font-size: 1.2em;
+}
+.abouttext{
+    width: 80%;
+    display: block;
+}
+.animtext{
+    width: 100%;
+    display: block;
+    background-image: url("imgs/wp_groundbackground.png");
+}
+.animtext h3{
+    padding-left: 10%;
+}
+#anim{
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.animtext #anim table{
+    width: 80%;
+}
+.button{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    border: 1px none #fff;
+    margin-top: 10px;
+    background: orange;
+    border-style: none;
+    transition: 100ms ease-in-out;
+}
+.button:hover{
+    background: #fff;
+}
+.offertext{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.offertext .offercol{
+    padding-left:10px;
+    padding-right: 10px;
+}
+.offertext img{
+    pointer-events: none;
+    width:100%;
+}
+.contacttext{
+    width: 100%;
+    display: block;
+    background: #0F4652;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactform{
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.contacttext .form input{
+    width: 600px;
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    border: none;
+    font-size: 1.2em;
+}
+.contacttext .form textarea {
+    resize: none;
+    border-radius: 25px;
+    height: 300px;
+    width: 600px;
+    padding: 20px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.contacttext .form input[type=text]:focus {
+    background-color: lightblue;
+}
+.contacttext .form input[type=email]:focus {
+    background-color: lightblue;
+}
+.contacttext .form textarea:focus {
+    background-color: lightblue;
+}
+.contacttext .form button{
+    margin-top:10px;
+    background-color: orange;
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.3em;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+.contacttext .form button:hover{
+    background: #fff;
+}
+
+
+
+@media screen and (max-width:991px){
+    header{
+        justify-content:center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header ul li a{
+        font-size: 0.8em;
+    }
+    header ul li{
+        margin-left: 5px;
+    }
+    #Banner img#big_vp{
+        opacity: 0;
+    }
+    #Banner img#small_vp{
+        opacity: 1;
+    }
+    /*header ul li .hidemenu{
+       display: none;
+    }*/
+    .contacttext .form input{
+        width: 90%;
+    }
+    .contacttext .form textarea{
+        width: 90%;
+        height: 500px;
+    }
+    #About h2{
+        font-size: 2em;
+    }
+    #About h3{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+    }
+    #About table{
+        table-layout: fixed;
+        width: 100%;
+    }
+    .contacttext .form input{
+        font-size: 1em;
+    }
+    .contacttext .form textarea{
+        font-size: 1em;
+    }
+    .contacttext .form button{
+        font-size: 1em;
+    }
+    #Supporters{
+        width: 90%;
+    }
+    #Supporters img{
+        width: 90%;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    .offertext{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:1350px){
+    #Banner img#big_vp{
+        object-fit: contain;
+    }
+}
+/*.angola {
+    display: none;
+}*/
