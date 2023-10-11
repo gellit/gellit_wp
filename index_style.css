@@ -134,17 +134,21 @@ header ul li .highlighted:hover{
     align-items: center;
 
 }
-#About h2{
+h2{
     font-size: 3.5em;
 }
-#About h3{
+h3{
     font-size: 2.5em;
 }
-#About h4{
+h4{
     font-size: 1.8em;
 }
-#About p{
+#About h4{
+    text-align: justify;
+}
+p{
     font-size: 1.2em;
+    text-align: justify;
 }
 .abouttext{
     width: 80%;
@@ -152,11 +156,15 @@ header ul li .highlighted:hover{
 }
 .animtext{
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url("imgs/wp_groundbackground.png");
 }
 .animtext h3{
-    padding-left: 10%;
+    width: 100%;
+    padding-left: 5%;
 }
 #anim{
     pointer-events: none;
@@ -166,6 +174,53 @@ header ul li .highlighted:hover{
 }
 .animtext #anim table{
     width: 80%;
+}
+#anim{
+    display: flex;
+}
+#anim td{
+    display: flex;
+    flex-direction: column;
+}
+#anim p{
+    margin-right: 20px;
+    text-align: center;
+}
+#anim .animbox{
+    width: 350px;
+}
+.Benefits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.Benefits li{
+    font-size: 1.2em;
+    list-style: none;
+    border-radius: 20px;
+    border: 3px solid orange; 
+    padding: 6px 15px;
+    background-color: #0F4652;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#actiontitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #2e7d87;
+}
+.actiontitleh3{
+    color: orange;
+}
+.actiontitleh4{
+    font-weight: 600;
 }
 .button{
     text-decoration: none;
@@ -205,12 +260,14 @@ header ul li .highlighted:hover{
 }
 .contacttext{
     width: 100%;
-    display: block;
     background: #0F4652;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.centerp{
+    text-align: center;
 }
 .contactform{
     width: 80%;
@@ -297,21 +354,34 @@ header ul li .highlighted:hover{
         width: 90%;
         height: 500px;
     }
-    #About h2{
+    h2{
         font-size: 2em;
     }
-    #About h3{
+    h3{
         font-size: 1.5em;
     }
-    #About h4{
+    h4{
         font-size: 1.2em;
     }
     p{
         font-size: 1em;
     }
-    #About table{
-        table-layout: fixed;
-        width: 100%;
+    #anim{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #anim .animbox{
+        width: 90%;
+    }
+    .Benefits{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Benefits li{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .contacttext .form input{
         font-size: 1em;
@@ -330,10 +400,10 @@ header ul li .highlighted:hover{
     }
     td{
         display: block;
-        width: 100%;
+        width: 90%;
     }
     .offertext{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-between;
     }
     .offercolleft{
@@ -351,6 +421,3 @@ header ul li .highlighted:hover{
         object-fit: contain;
     }
 }
-/*.angola {
-    display: none;
-}*/
