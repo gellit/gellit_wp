@@ -140,6 +140,9 @@ header ul li .highlighted:hover{
 #About h3{
     font-size: 2.5em;
 }
+#About h4{
+    font-size: 1.8em;
+}
 #About p{
     font-size: 1.2em;
 }
@@ -189,6 +192,12 @@ header ul li .highlighted:hover{
 .offertext .offercol{
     padding-left:10px;
     padding-right: 10px;
+}
+.offercolleft{
+    width: 40%;
+}
+.offercolright{
+    width: 60%;
 }
 .offertext img{
     pointer-events: none;
@@ -294,6 +303,9 @@ header ul li .highlighted:hover{
     #About h3{
         font-size: 1.5em;
     }
+    #About h4{
+        font-size: 1.2em;
+    }
     p{
         font-size: 1em;
     }
@@ -323,6 +335,12 @@ header ul li .highlighted:hover{
     .offertext{
         flex-direction: column;
         justify-content: space-between;
+    }
+    .offercolleft{
+        width: 100%;
+    }
+    .offercolright{
+        width: 100%;
     }
     #About #losth3{
         padding-left: 10%;
