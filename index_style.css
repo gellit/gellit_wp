@@ -415,6 +415,14 @@ p{
     #About #losth3{
         padding-left: 10%;
     }
+    #actiontitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
 }
 @media screen and (max-width:1350px){
     #Banner img#big_vp{
