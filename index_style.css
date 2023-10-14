@@ -186,9 +186,6 @@ p{
     margin-right: 20px;
     text-align: center;
 }
-#anim .animbox{
-    width: 350px;
-}
 .Benefits{
     display: flex;
     justify-content: space-between;
@@ -239,14 +236,14 @@ p{
 .offertext{
     margin-top: 50px;
     margin-bottom: 30px;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .offertext .offercol{
-    padding-left:10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .offercolleft{
     width: 40%;
@@ -323,6 +320,8 @@ p{
     padding-right: 50px;
     padding-bottom: 10px;
     width: 100%;
+    display: flex;
+    justify-content: right;
 }
 
 
@@ -424,7 +423,7 @@ p{
         text-align: center;
     }
 }
-@media screen and (max-width:1350px){
+@media screen and (max-width:1580px){
     #Banner img#big_vp{
         object-fit: contain;
     }
