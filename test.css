@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --text: #000;
+    --text-muted: #313131;
+    --background: #fff;
+    --primary: #144652;
+    --primary-muted: #b8c7cb;
+    --accent: #ffa500;
+    --accent-muted: #f6c466;
+    --accent-hover: #b8c7cb;
+    --muted: #f3f5f6;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--background);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 75px;
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    z-index: 10000;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{ 
+    text-decoration: none;
+}
+.button{
+    font-size: 1.2em;
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: 1px none #fff;    
+    transition: all 0.1s ease 0s;
+}
+.button-simple{
+    color: var(--text);
+}
+.button-simple:hover{
+    background: var(--accent-hover);
+    transition: all 0.1s ease 0s;
+}
+.button-highlight{
+    color: var(--text);
+    background: var(--accent);
+}
+.button-highlight:hover{
+    background: var(--accent-hover);
+    transition: all 0.1s ease 0s;
+}
+.button-dark{
+    color: var(--background);
+    background-color: var(--primary);
+}
+.button-muted-dark{
+    color: var(--text);
+    background-color: var(--primary-muted);
+}
+.nudge{
+    transition: all 0.2s ease 0s;
+}
+.nudge:hover{
+    transform: translateY(-4px);
+    transition: all 0.2s ease 0s;
+}
+.content-box{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.section-title{
+    color: var(--text);
+    font-size: 3.5rem;
+}
+.section-subtitle{
+    color: var(--text);
+    font-size: 2.8rem;
+}
+.horizontal-bento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--muted);
+    border: 1px none #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+}
+.card-effect{
+    transition: all 0.25s ease 0s;
+}
+.card-effect:hover{
+    transform: translateX(5px) translateY(-5px);
+    transition: all 0.25s ease 0s;
+}
+.card img{
+    height: 100px;
+}
+.card h2{
+    color: var(--primary);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.card p{
+    color: var(--text);
+}
+.centered-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.form{
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 50rem;
+    font-size: 1.1rem;
+}
+.section-midp{
+    font-size: 1.2rem;
+}
+.form input{
+    width: 40rem;
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    border: none;
+    font-size: 1.1rem;
+}
+.form textarea {
+    resize: none;
+    border-radius: 25px;
+    height: 300px;
+    width: 40rem;
+    padding: 20px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.form input[type=text]:focus {
+    background-color: var(--primary-muted);
+}
+.form input[type=email]:focus {
+    background-color: var(--primary-muted);
+}
+.form textarea:focus {
+    background-color: var(--primary-muted);
+}
+.form button{
+    width: 10rem;
+    cursor: pointer;
+}
+.form button:hover{
+    background: #fff;
+}
+.w-100{
+    width: 100%;
+}
+.w-70{
+    width: 70%;
+}
+.w-50{
+    width: 50%;
+}
+.jr-box{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.about-img{
+    background-image: url(imgs/corn_field.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.logo{
+    width: 200px;
+}
+.banner{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.banner a{
+    text-decoration: none;
+}
+.banner-title{
+    color: var(--text);
+    font-size: 5rem;
+}
+.banner-img{
+    background-image: url(imgs/corn_field.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15rem;
+}
+.motto{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.action-buttons{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
